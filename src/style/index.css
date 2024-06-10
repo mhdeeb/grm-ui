@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 20px;
+  background-color: #404047;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: 0;
+}
+
+::-webkit-scrollbar:hover {
+  border: 0;
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  height: 10px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #2929299d;
+  border-radius: 5px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+}
+
+#nav-icon {
+  padding-left: 1rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul > li {
+  padding-right: 1rem;
+}
+
+main {
+  padding: 4rem 2rem;
+  background: #23252c;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+main > section {
+  margin: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
