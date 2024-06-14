@@ -92,5 +92,5 @@ ul {
 }
 
 .bottom {
-  background-color: rgb(48, 46, 190);
+  /* align-self: last baseline; */
 }
