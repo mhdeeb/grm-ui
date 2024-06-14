@@ -59,7 +59,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Test App",
+      title: "GRM",
       template: path.resolve(__dirname, "src", "html", "index.html"),
       filename: "index.html",
       favicon: "./src/asset/favicon.ico",
