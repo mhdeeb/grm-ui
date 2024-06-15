@@ -14,7 +14,7 @@ const imgStyle = {
 export default function ListIcon(props: any) {
     return (
         <li className={props.className}>        
-            <NavLink style={style} to={props.to}><img style={imgStyle} src={props.src} alt={props.alt} />{props.text}</NavLink>
+            <NavLink replace style={style} to={props.to}><img style={imgStyle} src={props.src} alt={props.alt} />{props.text}</NavLink>
         </li>
     )
 }
