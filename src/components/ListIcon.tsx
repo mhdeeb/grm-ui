@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom"
 
-const style = {
+const style: any = {
     display: 'flex',
     alignItems: 'center',
+    userSelect: 'none',
 }
 
-const imgStyle = {
+const imgStyle: any = {
     width: '1.5rem',
     height: '1.5rem',
     marginRight: '10px',
@@ -14,7 +15,7 @@ const imgStyle = {
 export default function ListIcon(props: any) {
     return (
         <li className={props.className}>        
-            <NavLink replace style={style} to={props.to}><img style={imgStyle} src={props.src} alt={props.alt} />{props.text}</NavLink>
+            <NavLink draggable="false" replace style={style} to={props.to}><img draggable="false" style={imgStyle} width="50px" height="50px" src={props.src} alt={props.alt} />{props.text}</NavLink>
         </li>
     )
 }
