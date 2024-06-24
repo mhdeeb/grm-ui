@@ -22,9 +22,10 @@ export default function ListLink(props: any) {
             }
         },
         _hover: {
-            svg: {
-                fill: useColorModeValue("blue.500", "white"),
-                transition: "all 500ms ease"
+            "&:not(.active)": {
+                svg: {
+                    fill: useColorModeValue("blue.200", "gray.300"),
+                }
             }
         }
     };
