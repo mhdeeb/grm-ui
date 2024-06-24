@@ -89,12 +89,23 @@ const theme = extendTheme({
             100: '#4d4d4d',
             200: '#6a6a6a',
             300: '#fff',
+            400: '#1f1f1f',
         },
         light: {
             50: '#f0f0f0',
             100: '#aaaaaa',
             200: '#8a8a8a',
             300: '#000',
+            400: '#d1d1d1',
+        }
+    }, styles: {
+        global: {
+            body: {
+                bg: "light.400",
+                _dark: {
+                    bg: "dark.400"
+                }
+            }
         }
     }
 })

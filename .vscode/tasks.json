@@ -1,0 +1,64 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "webpack"
+		},
+		{
+			"type": "npm",
+			"script": "dev",
+			"problemMatcher": [],
+			"label": "npm: dev",
+			"detail": "webpack serve --mode development --devtool eval-source-map"
+		},
+		{
+			"dependsOn": "npm: build",
+			"dependsOrder": "sequence",
+			"command": "git",
+			"args": [
+				"add",
+				".",
+			],
+			"label": "git: add",
+			"problemMatcher": []
+		},
+		{
+			"dependsOn": "git: add",
+			"dependsOrder": "sequence",
+			"command": "git",
+			"args": [
+				"commit",
+				"-m",
+				"${input:message}",
+			],
+			"label": "git: commit",
+			"problemMatcher": []
+		},
+		{
+			"dependsOn": "git: commit",
+			"dependsOrder": "sequence",
+			"command": "git",
+			"args": [
+				"push",
+			],
+			"label": "git: push",
+			"problemMatcher": []
+		}
+	],
+	"inputs": [
+		{
+			"id": "message",
+			"description": "message: ",
+			"default": "Update",
+			"type": "promptString"
+		}
+	]
+}
