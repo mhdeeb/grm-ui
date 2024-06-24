@@ -48,30 +48,14 @@ const Navbar = defineStyleConfig({
 const Link = defineStyleConfig({
     baseStyle: {
         p: 5,
-        fontSize: '1.2rem',
-        userSelect: 'none',
-        transition: "all 100ms ease-out",
         _dark: {
             _activeLink: {
-                bg: 'dark.100',
                 color: 'green.300',
             },
-            _hover: {
-                bg: 'dark.200',
-                _activeLink: {
-                    bg: 'dark.100',
-                }
-            }
         },
         _hover: {
-            textDecoration: 'none',
-            bg: 'light.200',
-            transition: "all 100ms ease-out",
-            transform: "scale(1.05)",
             _activeLink: {
-                bg: 'light.100',
                 color: 'blue.500',
-                transform: "scale(1)",
             }
         },
     }
