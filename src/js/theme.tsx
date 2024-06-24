@@ -48,6 +48,7 @@ const Navbar = defineStyleConfig({
 const Link = defineStyleConfig({
     baseStyle: {
         p: 5,
+        fontSize: '1.2rem',
         userSelect: 'none',
         transition: "all 100ms ease-out",
         _dark: {
@@ -69,6 +70,7 @@ const Link = defineStyleConfig({
             transform: "scale(1.05)",
             _activeLink: {
                 bg: 'light.100',
+                color: 'blue.500',
                 transform: "scale(1)",
             }
         },
@@ -90,8 +92,8 @@ const theme = extendTheme({
         },
         light: {
             50: '#f0f0f0',
-            100: '#a0a0a0',
-            200: '#6a6a6a',
+            100: '#aaaaaa',
+            200: '#8a8a8a',
             300: '#000',
         }
     }

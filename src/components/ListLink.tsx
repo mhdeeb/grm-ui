@@ -10,7 +10,7 @@ export default function ListLink(props: any) {
             },
             _activeLink: {
                 bg: 'light.100',
-                color: 'dark.50',
+                color: 'blue.500',
                 svg: {
                     fill: useColorModeValue("blue.500", "green.300"),
                     transition: "all 500ms ease",

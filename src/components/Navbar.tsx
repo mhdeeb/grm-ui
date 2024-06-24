@@ -11,7 +11,7 @@ export default function Navbar() {
     const titleStyle: any = {
         display: 'flex',
         alignItems: 'center',
-        padding: "2rem",
+        padding: "2rem 0rem 2rem 4rem",
         boxShadow: '2px 0px 2px black',
         borderBottom: "1px solid grey",
         userSelect: 'none',
