@@ -1,6 +1,6 @@
 export default function DataCollectionPage() {
     return (
-        <div>
+        <div className="page">
             <h1>Data Collection</h1>
         </div>
     );

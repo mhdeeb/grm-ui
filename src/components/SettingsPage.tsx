@@ -1,7 +1,12 @@
+import { useColorMode, Button } from "@chakra-ui/react"
+
 export default function SettingsPage() {
+    const { colorMode, toggleColorMode } = useColorMode();
     return (
-        <div>
-            <h1>Settings</h1>
+        <div className="page">
+            <Button onClick={toggleColorMode}>
+                Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+            </Button>
         </div>
     );
 }

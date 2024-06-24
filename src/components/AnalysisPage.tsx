@@ -1,6 +1,6 @@
 export default function AnalysisPage() {
     return (
-        <div>
+        <div className="page">
             <h1>Analysis</h1>
         </div>
     );
