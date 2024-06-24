@@ -5,7 +5,7 @@ import KoverLearnSVG from '../components/svg/KoverSVG';
 import AnalysisSVG from '../components/svg/AnalysisSVG';
 import SettingsSVG from '../components/svg/SettingsSVG';
 import ListLink from './ListLink';
-import { Flex, List, Spacer, useStyleConfig } from '@chakra-ui/react';
+import { Flex, List, Spacer, Image, Heading, useStyleConfig } from '@chakra-ui/react';
 
 export default function Navbar() {
     const titleStyle: any = {
@@ -27,7 +27,10 @@ export default function Navbar() {
 
     return (
         <Flex __css={useStyleConfig('Navbar')} flexDirection="column">
-            <h1 style={titleStyle}><img draggable="false" style={titleImgStyle} src={TitleIcon} />GRM</h1>
+            <Heading style={titleStyle}>
+                <Image draggable="false" style={titleImgStyle} src={TitleIcon} />
+                GRM
+            </Heading>
             <List variant="navList">
                 <ListLink icon={DataBaseSVG} to="/collection" text="Data Collection" />
                 <ListLink icon={DataPreprocessingSVG} to="/preprocessing" text="Data Preprocessing" />
