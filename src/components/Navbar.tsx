@@ -75,20 +75,16 @@ export default function Navbar() {
           </Tooltip>
         </Heading>
         <VStack display="flex" h="100%">
-          <ListLink
-            icon={DataBaseSVG}
-            to="/collection"
-            text="Data Collection"
-          />
+          <ListLink icon={DataBaseSVG} to="collection" text="Data Collection" />
           <ListLink
             icon={DataPreprocessingSVG}
-            to="/preprocessing"
+            to="preprocessing"
             text="Data Preprocessing"
           />
-          <ListLink icon={KoverLearnSVG} to="/kover" text="Kover Learn" />
-          <ListLink icon={AnalysisSVG} to="/analysis" text="Analysis" />
+          <ListLink icon={KoverLearnSVG} to="kover" text="Kover Learn" />
+          <ListLink icon={AnalysisSVG} to="analysis" text="Analysis" />
           <Spacer />
-          <ListLink icon={SettingsSVG} to="/settings" text="Settings" />
+          <ListLink icon={SettingsSVG} to="settings" text="Settings" />
         </VStack>
       </Flex>
     </>
