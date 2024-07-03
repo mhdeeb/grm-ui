@@ -2,12 +2,14 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const CompressionWebpackPlugin = require("compression-webpack-plugin");
 
+const isDev = process.env.npm_lifecycle_event === "dev";
+
 module.exports = {
   mode: "production",
   entry: { bundle: path.resolve(__dirname, "src", "js", "index.tsx") },
   output: {
     path: path.resolve(__dirname, "docs"),
-    // publicPath: "/",
+    publicPath: isDev ? "/" : "auto",
     filename: "[contenthash].js",
     clean: true,
     assetModuleFilename: "[name][ext]",
