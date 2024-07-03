@@ -65,3 +65,23 @@ img {
   background-color: #2929299d;
   border-radius: 5px;
 }
+
+/* table {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+} */
+
+/* tbody { */
+/* display: flex;
+  flex-direction: column; */
+/* overflow-y: scroll; */
+/* } */
+/* 
+thead,
+tfoot,
+tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+} */

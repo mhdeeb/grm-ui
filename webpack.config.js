@@ -7,6 +7,7 @@ module.exports = {
   entry: { bundle: path.resolve(__dirname, "src", "js", "index.tsx") },
   output: {
     path: path.resolve(__dirname, "docs"),
+    publicPath: "/",
     filename: "[contenthash].js",
     clean: true,
     assetModuleFilename: "[name][ext]",
