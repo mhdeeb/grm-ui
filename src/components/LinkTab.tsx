@@ -13,7 +13,7 @@ export default function LinkTab(props: any) {
           .map((key) => (
             <Link
               onClick={(e) => e.preventDefault()}
-              onMouseDown={(e) => navigate(paths[key])}
+              onMouseDown={(e) => navigate(paths[key], { replace: true })}
               flex={1}
               textAlign="center"
               variant="tab"

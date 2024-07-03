@@ -37,7 +37,7 @@ export default function ListLink(props: any) {
     <Tooltip label={props.text} openDelay={1500}>
       <Link
         onClick={(e) => e.preventDefault()}
-        onMouseDown={(e) => navigate(props.to)}
+        onMouseDown={(e) => navigate(props.to, { replace: true })}
         variant="nav"
         sx={linkStyle}
         replace
