@@ -1,4 +1,4 @@
-import { Link, HStack, Box, Divider } from "@chakra-ui/react";
+import { Link, HStack, Box } from "@chakra-ui/react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 export default function LinkTab(props: any) {
